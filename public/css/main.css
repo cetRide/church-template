@@ -1,0 +1,1561 @@
+/*
+* Front Side CSS
+*/
+/* Front Side font type*/
+* {
+    font-family: proxima-nova, "Proxima Nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+.row, .top-bar {
+    max-width: 960px;
+}
+
+p {
+    color: #706c6c;
+}
+
+/* Alert Button*/
+div.alert {
+    padding: 20px;
+    z-index: 10;
+}
+
+div.alert .close {
+    display: none;
+}
+
+div.alert:hover {
+    opacity: 1;
+}
+
+.alert-success {
+    background: #2ad17d;
+    color: #fff;
+}
+
+.alert-info {
+    background: #3374B7;
+    color: #fff;
+}
+
+.alert-danger {
+    background: #ff3860;
+    color: #fff;
+}
+
+.alert-error {
+    background: #ff3860;
+    color: #fff;
+}
+
+.alert-warning {
+    background: #0a0a0a;
+    color: #ffdd57;
+}
+
+.label-eye {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+.label-eye.primary {
+    color: #3374B7;
+}
+
+.label-eye.gray {
+    color: #AEB6BD;
+    background: #AEB6BD;
+}
+
+.label-eye.success {
+    color: #2ad17d;
+}
+
+.label-eye.alert {
+    color: #ff3860;
+}
+
+.label-eye.warnings {
+    background: #ffcb00;
+}
+
+.intranet-success {
+    color: #fff;
+    background: #2ad17d;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 1px;
+}
+
+.intranet-success:hover, .intranet-success:active, .intranet-success:focus {
+    color: #fff;
+    border: 1px solid #2ad17d;
+    background: #2ad17d;
+}
+
+.intranet-alert, .intranet-danger {
+    color: #fff;
+    background: #ff3860;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 1px;
+}
+
+.intranet-alert:hover, .intranet-alert:active, .intranet-alert:focus, .intranet-danger:hover, .intranet-danger:active, .intranet-danger:focus {
+    color: #fff;
+    border: 1px solid #ff3860;
+    background: #ff3860;
+}
+
+.intranet-warning {
+    color: #fff;
+    background: #ff9100;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 1px;
+}
+
+.intranet-warning:hover, .intranet-warning:active, .intranet-warning:focus {
+    color: #fff;
+    border: 1px solid #ff9100;
+    background: #ff9100;
+}
+
+span.error {
+    color: #ff3860;
+    font-size: 12px;
+    font-style: italic;
+}
+
+input.error, select.error {
+    border: 1px solid #ff3860;
+}
+
+#Ct-Table .intranet-success, #Ct-Table .intranet-alert {
+    margin-top: 0;
+    margin-bottom: 0;
+    min-width: 115px;
+}
+
+/*
+*  Formatting for all front side buttons
+*/
+input[type=submit], .button {
+    border-radius: 0;
+    box-shadow: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+h2 {
+    font-size: 23px;
+    line-height: 48px;
+    color: #912842;
+    margin-bottom: 30px;
+}
+
+/*
+*  Formatting for all front side input fields
+*/
+input:not([type]), input[type=text], input[type=password], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=email], input[type=number], input[type=search], input[type=tel], input[type=time], input[type=url], input[type=color], textarea {
+    border-style: none;
+    border-radius: 3px;
+    border-width: 0;
+    border-color: #fff;
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+/* Custom Buttons */
+.custom-button {
+    background-color: #912842;
+    text-transform: uppercase;
+}
+
+.custom-button:hover {
+    background-color: #7f3b4b;
+}
+
+.hollow-button {
+    transition: background-color .9s ease;
+    border: 1px solid #912842;
+    border-radius: 0;
+    padding: 14px 40px 14px 40px;
+    color: #912842;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: #fff;
+    text-transform: uppercase;
+}
+
+.hollow-button:hover {
+    transition: background-color .9s ease;
+    border: 1px solid #912842;
+    color: white;
+    background-color: #912842;
+}
+
+.classical-button {
+    background-color: #912842;
+    text-transform: uppercase;
+}
+
+.dark-button {
+    background: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    border: 1px solid #fff;
+}
+
+.dark-button:hover {
+    background-color: black;
+}
+
+.reveal-modal .close-reveal-modal {
+    color: #232336;
+    top: -4px;
+    right: 1.375rem;
+}
+
+/*
+* Slider styling
+*/
+.slick-slide {
+    position: relative;
+}
+
+.slick-prev, .slick-next {
+    display: none !important;
+}
+
+@media screen and (max-width: 39.9375em) {
+    h2 {
+        margin-bottom: 15px;
+    }
+}
+
+/*
+* Medium screens styling
+*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    h2 {
+        margin-bottom: 15px;
+    }
+    .landing-container #boxholder {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+/*
+* Menu  Bar styling
+*/
+.contain-to-grid {
+    width: 100%;
+    background: #fff;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    box-shadow: inset 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.top-bar {
+    background: #fff;
+}
+
+.top-bar-section {
+    margin-top: 35px;
+}
+
+.top-bar-section .left {
+    margin-left: 28px;
+}
+
+.logo {
+    max-height: 100px;
+    max-width: 200px;
+    padding-top: 10px;
+}
+
+.current a {
+    color: #912842 !important;
+    border: 2px solid #9b9b67;
+}
+
+.news-current {
+    color: #912842 !important;
+    border: 2px solid #9b9b67;
+}
+
+.dropdown-active {
+    color: #ffffff !important;
+    border: 2px solid #9b9b67;
+}
+
+.logo img {
+    max-height: 70px;
+    max-width: 200px;
+}
+
+.top-bar ul li a, .top-bar ul li ul li h5 a {
+    color: #706c6c;
+}
+
+.top-bar .top-bar-section {
+    padding-left: 1px;
+}
+
+.top-bar-section ul li, .top-bar.expanded .title-area {
+    background: #fff;
+}
+
+.top-bar-section .dropdown li.parent-link a, .top-bar-section .dropdown li.title h5 a {
+    color: #706c6c;
+}
+
+.top-bar-section .has-dropdown a:not(.button):hover {
+    background: #912842 !important;
+    color: #fff !important;
+}
+
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+    background: #912842;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button):hover {
+    background: #912842;
+    color: #fff;
+}
+
+.top-bar-section ul li:hover:not(.has-form) > a {
+    color: #FFF;
+    background: #912842;
+}
+
+.top-bar-section .dropdown li a {
+    background: #FFF;
+    color: #706c6c;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background: #fff;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+    background: #fff;
+    color: #912842;
+}
+
+.top-bar .toggle-topbar.menu-icon a {
+    color: #706c6c;
+}
+
+.top-bar-section .has-dropdown > a:after {
+    border-color: #706c6c transparent transparent;
+    border-top-style: solid;
+    top: 13px;
+}
+
+.top-bar .toggle-topbar.menu-icon a span::after {
+    box-shadow: 0 0 0 1px #706c6c, 0 7px 0 1px #706c6c, 0 14px 0 1px #706c6c;
+}
+
+.top-bar .toggle-topbar.menu-icon {
+    margin-top: -10px;
+}
+
+.top-bar-section .right i {
+    font-size: 16px;
+    color: #912842;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background: #fff;
+    line-height: 26px;
+    padding: 0 .9375rem;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.top-bar .telephone {
+    font-size: 14px !important;
+    text-transform: uppercase;
+    font-weight: 500 !important;
+    color: #706c6c;
+    padding: 0 .9375rem;
+    margin-top: 3px;
+    padding-bottom: 9px;
+    margin-left: 25px;
+    letter-spacing: 1px;
+}
+
+.top-bar-section .telephone i {
+    font-size: 15px;
+    color: #912842;
+}
+
+.top-bar .telephone:hover {
+    color: #912842 !important;
+    transition: all .3s ease-in-out !important;
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .top-bar .telephone {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    .contain-to-grid {
+        width: 100%;
+        background: #fff;
+        height: auto;
+        padding-top: 6px;
+        padding-bottom: 4px;
+    }
+    .top-bar-section {
+        margin-top: 0;
+    }
+    .top-bar .top-bar-section {
+        padding-left: 0px;
+    }
+    .top-bar .toggle-topbar.menu-icon {
+        margin-top: -13px;
+    }
+    .current a {
+        border: none;
+    }
+    .logo {
+        margin-left: 15px;
+        padding-top: 1px;
+    }
+    .logo img {
+        max-height: 40px;
+        max-width: 200px;
+    }
+    .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+        background: #fff;
+        color: #706c6c;
+    }
+    .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button):hover {
+        color: #912842;
+    }
+    .top-bar-section li:not(.has-form) a:not(.button) {
+        line-height: 30px;
+        font-size: 15px;
+    }
+    .top-bar-section .has-dropdown a:not(.button):hover {
+        background: #fff !important;
+        color: #912842 !important;
+    }
+    .top-bar .telephone {
+        margin-left: 0px;
+    }
+}
+
+/*
+* Home Page
+*/
+.hero-unit {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), url("/site_images/ccm-church.jpg");
+    background-position: center;
+    height: 650px;
+    background-size: auto 960px;
+    background-repeat: no-repeat;
+}
+
+.prayer-request {
+    height: 400px;
+    background-image: url("/site_images/need-prayer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.msg-btn {
+    border: 2px solid;
+    color: white;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.msg-btn:hover {
+    border: none;
+    color: #912842;
+    background-color: white;
+    cursor: pointer;
+}
+
+.prayer-details {
+    height: 400px;
+    background-color: #912842;
+}
+
+.new4 {
+    display: inline-block;
+    border: 2px solid #912842;
+    margin-left: 10px;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.hero-unit-info {
+    text-align: center;
+}
+
+.hero-unit-info h2 {
+    margin-top: 160px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hero-unit-info p {
+    margin-top: 30px;
+    color: #fff;
+}
+
+.hero-unit-info .hero-unit-info-links {
+    margin-top: 90px;
+}
+
+.hero-unit-arrow {
+    width: 30px;
+    height: 30px;
+    margin: 40px auto auto auto;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.hero-unit-arrow i {
+    color: #fff;
+    font-size: 26px;
+}
+
+.home-overview {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.home-overview-details .hollow-button {
+    margin-top: 75px;
+    margin-bottom: 0px;
+}
+
+.home-overview-img img {
+    width: 100%;
+}
+
+.home-location {
+    margin-bottom: 100px;
+}
+
+.home-lifestyle-details-btn a {
+    margin-top: 108px;
+}
+
+.home-lifestyle-img {
+    border-bottom: 2px solid #939296;
+    border-right: 1px solid #939296;
+}
+
+.home-lifestyle-img img {
+    width: 100%;
+}
+
+.home-lifestyle-img-text {
+    height: 95px;
+    padding-left: 15px;
+    padding-top: 10px;
+    background-color: #f6f6f4;
+}
+
+.home-lifestyle-img-text p {
+    margin-bottom: 0;
+}
+
+.home-lifestyle-details h2 {
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+
+.developer {
+    background-color: #EEEEEE;
+    background-image: linear-gradient(-180deg, #EEEEEE 0%, rgba(255, 255, 255, 0) 100%);
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.developer-text {
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+
+.developer-text h4 {
+    text-align: center;
+    font-size: 25px;
+    line-height: 48px;
+    color: #939296;
+    font-weight: 200;
+}
+
+.developer-text p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24.5px;
+    color: #939296;
+    margin-bottom: 40px;
+}
+
+.developer-text hr {
+    max-width: 120px;
+    border-top: 2px solid #912842;
+    margin-left: 246px;
+    height: 21px;
+}
+
+.developer-text span {
+    margin-left: 211px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24.5px;
+    color: #912842;
+}
+
+.developer-other-projects-images {
+    background-color: #EEEEEE;
+}
+
+.developer-other-projects-images img {
+    max-width: 293px;
+}
+
+.developer-other-projects-images:hover img {
+    transition: box-shadow .5s ease;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.developer-other-projects-images h6 {
+    margin-left: 110px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 24.5px;
+    color: #232336;
+}
+
+.developer-other-projects-images:hover h6 {
+    transition: text-decoration 2s ease 2s;
+    text-decoration: underline;
+}
+
+.developer-more {
+    margin-top: 30px;
+}
+
+.home-experience {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.home-experience-details h2 {
+    font-size: 36px;
+}
+
+.home-experience-details .hollow-button {
+    margin-top: 102px;
+}
+
+.home-experience-img img {
+    width: 100%;
+}
+
+/*
+* Medium screens styling for the home page
+*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .home-lifestyle-img {
+        margin-bottom: 40px;
+    }
+}
+
+/*
+* Small screens styling for the home page
+*/
+@media screen and (max-width: 39.9375em) {
+    .hero-unit-info h2 {
+        margin-top: 100px;
+        color: #fff;
+    }
+    .hero-unit-info p {
+        margin-top: 15px;
+        color: #fff;
+    }
+    .hero-unit-info .hero-unit-info-links {
+        margin-top: 30px;
+    }
+    .hero-unit-arrow {
+        margin: 40px auto auto auto;
+    }
+    .home-overview {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .home-lifestyle-img {
+        margin-bottom: 40px;
+    }
+    .home-lifestyle-img img {
+        height: auto;
+    }
+    .home-location {
+        margin-bottom: 50px;
+    }
+    .developer {
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+    .developer-text {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .developer-text hr {
+        margin-left: 5px;
+        height: 10px;
+    }
+    .developer-text span {
+        margin-left: 5px;
+    }
+    .developer-text h3 {
+        margin-left: 1px;
+    }
+    .developer-text p {
+        margin-bottom: 20px;
+    }
+    .developer-other-projects-images img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+    .developer-other-projects-images h6 {
+        text-align: center;
+    }
+    .home-experience {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .home-experience-details .hollow-button {
+        margin-top: 30px;
+    }
+    .home-lifestyle-details-btn a {
+        margin-top: 20px;
+    }
+    .home-overview-details .hollow-button {
+        margin-top: 11px;
+        margin-bottom: 30px;
+    }
+    .home-lifestyle {
+        padding: 0 15px 0 15px;
+    }
+}
+
+/*
+*  styling for the Amenities  page
+*/
+.amenities-page h2 {
+    text-transform: uppercase;
+    color: #9b9b67;
+}
+
+.amenities-hero-unit {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), url("/site_images/hand.jpg");
+    background-position: center;
+    height: 450px;
+    font-size: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.amenities-hero-unit-info {
+    text-align: center;
+}
+
+.amenities-hero-unit-info p {
+    margin-top: 214px !important;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 3px;
+    margin-bottom: 70px;
+}
+
+.amenities-intro {
+    margin-bottom: 65px;
+    margin-top: 65px;
+}
+
+.amenities-intro h2 {
+    color: #912842;
+    margin-top: 0px !important;
+}
+
+.amenities-details-arrival, .amenities-details-retail, .amenities-details-pool, .amenities-details-gym {
+    background-color: #f8f8f8;
+    padding-top: 65px;
+}
+
+.amenities-details-retail, .amenities-details-gym {
+    padding-bottom: 65px;
+}
+
+.amenities-details-restaurant, .amenities-details-playground {
+    padding-top: 65px;
+}
+
+.amenities-details-playground {
+    padding-bottom: 65px;
+}
+
+.amenities-details-arrival h2, .amenities-details-retail h2, .amenities-details-pool h2,
+.amenities-details-gym h2, .amenities-details-restaurant h2, .amenities-details-playground h2 {
+    font-size: 16px;
+}
+
+.amenities-details-arrival img, .amenities-details-retail img, .amenities-details-pool img,
+.amenities-details-gym img, .amenities-details-restaurant img, .amenities-details-playground img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.amenities-page hr {
+    border: 1px solid #706c6c;
+    margin-top: 0px;
+    margin-bottom: 265px;
+}
+
+.amenities-page h2 {
+    margin-top: -17px;
+}
+
+.amenities-page span {
+    color: #912842;
+}
+
+.amenities-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), url("/site_images/amenities_low_banner.jpg");
+    background-position: center;
+    height: 622px;
+    background-size: auto 625px;
+    background-repeat: no-repeat;
+}
+
+.amenities-banner-link .button {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+    margin-top: 502px;
+}
+
+/*
+* Medium screens styling for the Amenities  page
+*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .amenities-intro {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .amenities-hero-unit-info h2 {
+        margin-top: 214px;
+    }
+    .amenities-details-arrival, .amenities-details-retail, .amenities-details-pool,
+    .amenities-details-gym, .amenities-details-restaurant, .amenities-details-playground {
+        padding-top: 30px;
+    }
+    .amenities-details-retail, .amenities-details-gym, .amenities-details-playground {
+        padding-bottom: 30px;
+    }
+    .amenities-details-arrival img, .amenities-details-retail img, .amenities-details-pool img,
+    .amenities-details-gym img, .amenities-details-restaurant img, .amenities-details-playground img {
+        height: auto;
+    }
+    .amenities-page hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 4%;
+    }
+    .amenities-page h2 {
+        margin-top: 10px;
+    }
+}
+
+/*
+* Small screens styling for the  Amenities page
+*/
+@media screen and (max-width: 39.9375em) {
+    .amenities-intro {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .amenities-hero-unit-info h2 {
+        margin-top: 140px !important;
+    }
+    .amenities-details-arrival, .amenities-details-retail, .amenities-details-pool,
+    .amenities-details-gym, .amenities-details-restaurant, .amenities-details-playground {
+        padding-top: 30px;
+    }
+    .amenities-details-retail, .amenities-details-gym, .amenities-details-playground {
+        padding-bottom: 30px;
+    }
+    .amenities-page hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 7%;
+    }
+    .amenities-page h2 {
+        margin-top: 10px;
+    }
+}
+
+/*
+* About Page Styling
+*/
+.about-hero-unit {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), url("/site_images/about.jpg");
+    background-position: center;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.the-church {
+    background-color: #f6f4f3;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.the-history {
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), url("/site_images/me-pray.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ch-info {
+    height: 500px;
+}
+
+.abt-img {
+    height: 350px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), url("/site_images/cross.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ch-info span {
+    color: #912842;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.about-page h2 {
+    text-transform: uppercase;
+}
+
+.about-page p {
+    font-size: 14px;
+}
+
+.about-icons {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.about-icons .fa-stack {
+    margin-right: 30px;
+}
+
+.about-icons .fa-stack-1x {
+    font-size: 27px;
+    margin: 7px 5px;
+}
+
+.about-icons .fa {
+    text-align: center;
+}
+
+.about-icons .fa-twitter, .fa-home, .fa-map-marker, .fa-heart {
+    color: #fff;
+}
+
+.about-icons .heart .fa-stack-1x {
+    font-size: 22px;
+}
+
+.about-icons .fa-circle {
+    color: #912842;
+    font-size: 3em;
+}
+
+.about-us {
+    margin-bottom: 65px;
+    margin-top: 65px;
+}
+
+.about-us-image img, .about-location-img img {
+    margin-top: 15px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.about-location {
+    margin-bottom: 65px;
+}
+
+.about-developer-title {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.about-developers {
+    margin-bottom: 65px;
+}
+
+.about-developers > .row {
+    max-width: 100%;
+}
+
+.about-developers .row .columns {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.about-developers-cre .row, .about-developers-CI .row {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.about-developers-cre .row .columns, .about-developers-CI .row .columns {
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+}
+
+.about-developers-cre {
+    background-color: #f8f8f8;
+    height: 400px;
+    padding: 65px 0 65px;
+}
+
+.about-developers-CI {
+    background-color: #e6e6e6;
+    height: 400px;
+    padding: 65px 0 65px;
+}
+
+.about-developers-cre-details, .about-developers-CI-details {
+    text-align: center;
+}
+
+.about-developers-cre-details img, .about-developers-CI-details img {
+    height: 40px;
+    width: 128px;
+}
+
+.about-other-projects-text h2 {
+    position: relative;
+}
+
+.about-other-projects-text h2:after {
+    content: "";
+    background: #949c9c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 30%;
+}
+
+.about-other-projects-title {
+    text-align: center;
+}
+
+.about-other-projects-img img {
+    height: 215px;
+    width: 100%;
+}
+
+.about-other-projects-situ, .about-other-projects-amara {
+    margin-bottom: 65px;
+}
+
+.downloads-details {
+    text-align: center;
+}
+
+.downloads {
+    background-color: #f8f8f8;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/*
+* Small screens styling for the  About page
+*/
+@media screen and (max-width: 39.9375em) {
+    .the-church {
+        padding: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .about-us {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .about-icons {
+        margin-bottom: 30px;
+    }
+    .about-location {
+        margin-bottom: 30px;
+    }
+    .about-developer-title {
+        margin-bottom: 30px;
+    }
+    .about-developers {
+        margin-bottom: 30px;
+    }
+    .about-developers-cre {
+        background-color: #f8f8f8;
+        height: auto;
+        padding: 30px 0 30px;
+    }
+    .about-developers-CI {
+        background-color: #e6e6e6;
+        height: auto;
+        padding: 30px 0 30px;
+    }
+    .about-other-projects-situ, .about-other-projects-amara {
+        margin-bottom: 30px;
+    }
+    .about-other-projects-img img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .about-other-projects-text h2:after {
+        width: 10%;
+    }
+    .downloads {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .about-developers-cre .row, .about-developers-CI .row {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+/*
+* Medium screens styling for the About page
+*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .about-other-projects-img img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: auto;
+    }
+    .about-other-projects-text h2:after {
+        width: 10%;
+    }
+}
+
+/*
+* Contact Page Styling
+*/
+.contact-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("/site_images/contact.jpg");
+    background-position: center;
+    height: 365px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-hero-unit-info h2 {
+    margin-top: 150px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.contact-details {
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.contact-details .fa-circle {
+    color: #912842;
+    font-size: 50px;
+}
+
+.contact-details .fa-mobile, .contact-details .fa-envelope, .contact-details .fa-map-marker {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+.contact-details .fa-stack {
+    margin-bottom: 20px;
+}
+
+.contact-telephone, .contact-email {
+    margin-left: 45px;
+}
+
+.contact-details-title h2 {
+    color: black;
+    text-align: center;
+}
+
+.contact-details-title h2 span, .office {
+    color: #912842;
+}
+
+.contact-address .second-office {
+    margin-top: 15px;
+}
+
+.contact-address p, .contact-telephone p, .contact-email p {
+    margin-bottom: 1px;
+}
+
+.contact-form {
+    margin-bottom: 65px;
+}
+
+.contact-form-details input[type=text], .contact-form-details input[type=email], .contact-form-details textarea {
+    background-color: #f8f8f8;
+}
+
+.contact-form-details .button {
+    background-color: #912842;
+    border-radius: 3px;
+}
+
+.contact-form-title h2 {
+    color: #484848;
+}
+
+.contact-form-title h2 span {
+    color: #484848;
+}
+
+/*
+* Small screens styling for the   page
+*/
+@media screen and (max-width: 39.9375em) {
+    .contact-details {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .contact-form {
+        margin-bottom: 30px;
+    }
+    .contact-address, .contact-telephone, .contact-email {
+        margin-bottom: 20px;
+    }
+    .contact-telephone, .contact-email {
+        margin-left: 0px;
+    }
+}
+
+/*
+* Medium screens styling for the   page
+*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .contact-address, .contact-telephone, .contact-email {
+        margin-bottom: 20px;
+    }
+}
+
+/*
+* Styling for the News page
+*/
+.news-hero-unit {
+    height: 205px;
+    background-color: #912842;
+    margin-top: 100px;
+    margin-bottom: 65px;
+}
+
+.news-hero-unit h2 {
+    margin-top: 80px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.news-hero-unit h2 strong {
+    color: #9b9b67;
+}
+
+.news-search input {
+    border-radius: 0;
+    border-bottom: 1px solid #706c6c;
+}
+
+.news-item {
+    padding-top: 65px;
+    margin-bottom: 80px;
+    border-top: 1px solid #706c6c;
+}
+
+.news-item-img {
+    height: 287px;
+}
+
+.news-item-details {
+    height: 287px;
+}
+
+.news-item-details h2 {
+    margin-bottom: 7px;
+    margin-top: -10px;
+    line-height: 29px;
+    font-size: 20px;
+}
+
+.news-item-details h2 a {
+    color: #912842;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.news-search a {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #706c6c;
+}
+
+.news-search {
+    margin-bottom: 20px;
+}
+
+.news-item-tag {
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+}
+
+.news-item-tag p {
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.news-item-tag a {
+    color: #912842;
+    font-size: 14px;
+}
+
+.news-items-pagination {
+    margin-bottom: 65px;
+    margin-top: -40px;
+}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.pagination li a {
+    border: 1px solid lightgray;
+}
+
+.pagination > li {
+    display: inline;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #C9091A;
+    border-color: #C9091A;
+}
+
+/*
+* Medium screens styling for the News page
+*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .news-hero-unit, .news-item {
+        margin-bottom: 30px;
+    }
+    .news-item-tag {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        bottom: auto;
+    }
+    .news-item {
+        margin-bottom: 30px;
+        padding-top: 25px;
+    }
+    .news-item-details {
+        height: auto;
+    }
+}
+
+/*
+* Small screens styling for the News page
+*/
+@media screen and (max-width: 39.9375em) {
+    .news-hero-unit, .news-item {
+        margin-bottom: 30px;
+    }
+    .news-item-tag {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        bottom: auto;
+    }
+    .news-item {
+        margin-bottom: 30px;
+        padding-top: 25px;
+    }
+    .news-item-details {
+        height: auto;
+    }
+    .news-items-pagination {
+        margin-bottom: 40px;
+        margin-top: -20px;
+    }
+}
+
+/* Footer Style*/
+.footer {
+    background-color: #912842;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.loc {
+    box-shadow: 0 0.4px 10px -1px rgba(0, 0, 0, 0.29), 0 1.1px 21.9px -1px rgba(0, 0, 0, 0), 0 2.1px 36.6px -1px rgba(0, 0, 0, 0), 0 3.4px 55.9px -1px rgba(0, 0, 0, 0), 0 5.3px 82.7px -1px rgba(0, 0, 0, 0), 0 7.9px 118.8px -1px rgba(0, 0, 0, 0), 0 11.7px 158.4px -1px rgba(0, 0, 0, 0), 0 17.4px 194.5px -1px rgba(0, 0, 0, 0), 0 26.3px 226px -1px rgba(0, 0, 0, 0), 0 40px 254px -1px rgba(0, 0, 0, 0);
+    background: white;
+    width: 30%;
+    z-index: 2;
+    height: 190px;
+    position: absolute;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.footer h2 {
+    font-size: 20px;
+    line-height: 48px;
+    color: #fff;
+}
+
+.footer p {
+    color: #c4c4c4;
+}
+
+.footer-social a {
+    color: #fff;
+}
+
+.footer-social a:hover {
+    color: #008CBA;
+}
+
+.footer-main {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 30px;
+    margin-bottom: 25px;
+}
+
+.footer-contact-icons p {
+    margin: 0;
+    color: #fff;
+}
+
+/*  Icons */
+.footer .fa {
+    color: #9b9b67;
+}
+
+.footer .fa:hover {
+    color: #fff;
+}
+
+.footer-social .fa {
+    color: #fff;
+}
+
+.footer-social .fa:hover {
+    color: #9b9b67;
+}
+
+.footer-social .fa-twitter {
+    margin-right: 10px;
+}
+
+.footer-contact-icons .fa-map-marker {
+    margin-right: 14px;
+}
+
+.footer-contact-icons .fa-envelope {
+    margin-right: 9px;
+}
+
+.footer-contact-icons .fa-phone {
+    margin-right: 10px;
+}
+
+.footer-subscribe .button {
+    background: #9b9b67;
+    border-radius: 3px;
+    padding-top: 8px;
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: initial;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .footer {
+        padding-top: 20px;
+    }
+    .loc {
+        width: 99.5%;
+        margin: 5px;
+        height: 170px;
+    }
+    .footer-main {
+        padding-bottom: 30px;
+        margin-bottom: 25px;
+    }
+}
+
+/*# sourceMappingURL=app.css.map */

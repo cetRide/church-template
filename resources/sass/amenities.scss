@@ -1,0 +1,170 @@
+/*
+*  styling for the Amenities  page
+*/
+
+
+.amenities-page h2 {
+  text-transform: uppercase;
+  color: #9b9b67;
+}
+
+.amenities-hero-unit {
+  background-image: linear-gradient(rgba(0, 0, 0, .48), rgba(0, 0, 0, .48)),
+  url("/site_images/hand.jpg");
+  background-position: center;
+  height: 450px;
+  font-size: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.amenities-hero-unit-info {
+  text-align: center;
+}
+
+.amenities-hero-unit-info p {
+  margin-top: 214px !important;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 3px;
+  margin-bottom: 70px;
+}
+
+.amenities-intro {
+  margin-bottom: 65px;
+  margin-top: 65px;
+}
+
+.amenities-intro h2 {
+  color: #912842;
+  margin-top: 0px !important;
+}
+
+.amenities-details-arrival, .amenities-details-retail, .amenities-details-pool, .amenities-details-gym {
+  background-color: #f8f8f8;
+  padding-top: 65px;
+}
+
+.amenities-details-retail, .amenities-details-gym {
+  padding-bottom: 65px;
+}
+
+.amenities-details-restaurant, .amenities-details-playground {
+  padding-top: 65px;
+}
+
+.amenities-details-playground {
+  padding-bottom: 65px;
+}
+
+.amenities-details-arrival h2, .amenities-details-retail h2, .amenities-details-pool h2,
+.amenities-details-gym h2, .amenities-details-restaurant h2, .amenities-details-playground h2{
+  font-size: 16px;
+}
+
+.amenities-details-arrival img, .amenities-details-retail img, .amenities-details-pool img,
+.amenities-details-gym img, .amenities-details-restaurant img, .amenities-details-playground img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.amenities-page hr {
+  border: 1px solid #706c6c;
+  margin-top: 0px;
+  margin-bottom: 265px;
+}
+
+.amenities-page h2 {
+  margin-top: -17px;
+}
+
+.amenities-page span {
+  color: #912842;
+}
+
+.amenities-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, .48), rgba(0, 0, 0, .48)),
+  url("/site_images/amenities_low_banner.jpg");
+  background-position: center;
+  height: 622px;
+  background-size: auto 625px;
+  background-repeat: no-repeat;
+}
+
+.amenities-banner-link .button{
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 12px;
+  margin-top: 502px;
+}
+
+/*
+* Medium screens styling for the Amenities  page
+*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .amenities-intro {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .amenities-hero-unit-info h2 {
+    margin-top: 214px;
+  }
+
+  .amenities-details-arrival, .amenities-details-retail, .amenities-details-pool,
+  .amenities-details-gym, .amenities-details-restaurant, .amenities-details-playground {
+    padding-top: 30px;
+  }
+
+  .amenities-details-retail, .amenities-details-gym, .amenities-details-playground {
+    padding-bottom: 30px;
+  }
+
+  .amenities-details-arrival img, .amenities-details-retail img, .amenities-details-pool img,
+  .amenities-details-gym img, .amenities-details-restaurant img, .amenities-details-playground img {
+    height: auto;
+  }
+
+  .amenities-page hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 4%;
+  }
+
+  .amenities-page h2 {
+    margin-top: 10px;
+  }
+}
+
+/*
+* Small screens styling for the  Amenities page
+*/
+@media screen and (max-width: 39.9375em) {
+  .amenities-intro {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .amenities-hero-unit-info h2 {
+    margin-top: 140px !important;
+  }
+
+  .amenities-details-arrival, .amenities-details-retail, .amenities-details-pool,
+  .amenities-details-gym, .amenities-details-restaurant, .amenities-details-playground {
+    padding-top: 30px;
+  }
+
+  .amenities-details-retail, .amenities-details-gym, .amenities-details-playground {
+    padding-bottom: 30px;
+  }
+
+  .amenities-page hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 7%;
+  }
+
+  .amenities-page h2 {
+    margin-top: 10px;
+  }
+}

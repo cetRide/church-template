@@ -1,0 +1,226 @@
+/*
+* Menu  Bar styling
+*/
+
+.contain-to-grid {
+  width: 100%;
+  background: #fff;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  left: 0;
+  box-shadow: inset 0 -1px 1px 0 rgba(0, 0, 0, .2);
+}
+
+
+.top-bar {
+  background: #fff;
+}
+
+.top-bar-section{
+  margin-top: 35px;
+
+  .left{
+    margin-left: 28px;
+  }
+}
+
+.logo {
+  max-height: 100px;
+  max-width: 200px;
+  padding-top: 10px;
+}
+
+.current a{
+  color: #912842 !important;
+  border: 2px solid #9b9b67;
+}
+.news-current{
+  color: #912842 !important;
+  border: 2px solid #9b9b67;
+}
+.dropdown-active {
+  color: #ffffff !important;
+  border: 2px solid #9b9b67;
+}
+
+.logo img {
+  max-height: 70px;
+  max-width: 200px;
+}
+
+.top-bar ul li a, .top-bar ul li ul li h5 a {
+  color: #706c6c;
+}
+
+.top-bar .top-bar-section{
+  padding-left: 1px;
+}
+
+.top-bar-section ul li, .top-bar.expanded .title-area {
+  background: #fff;
+}
+
+.top-bar-section .dropdown li.parent-link a, .top-bar-section .dropdown li.title h5 a {
+  color: #706c6c;
+}
+
+.top-bar-section  .has-dropdown a:not(.button):hover {
+  background: #912842 !important;
+  color: #fff !important;
+}
+
+//DROPDOWN STYLING
+.top-bar-section .dropdown li:not(.has-form):not(.active)>a:not(.button) {
+  background: #912842;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+
+.top-bar-section .dropdown li:not(.has-form):not(.active)>a:not(.button):hover {
+  background: #912842;
+  color: #fff;
+}
+
+.top-bar-section ul li:hover:not(.has-form)>a {
+  color: #FFF;
+  background: #912842;
+}
+
+.top-bar-section .dropdown li a {
+  background: #FFF;
+  color: #706c6c;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: #fff;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+  background: #fff;
+  color: #912842;
+}
+
+.top-bar .toggle-topbar.menu-icon a {
+  color: #706c6c;
+}
+
+.top-bar-section .has-dropdown > a:after {
+  border-color: #706c6c transparent transparent;
+  border-top-style: solid;
+  top: 13px;
+}
+
+.top-bar .toggle-topbar.menu-icon a span::after {
+  box-shadow: 0 0 0 1px #706c6c, 0 7px 0 1px #706c6c, 0 14px 0 1px #706c6c;
+}
+
+.top-bar .toggle-topbar.menu-icon {
+  margin-top: -10px;
+}
+
+.top-bar-section .right i{
+  font-size: 16px;
+  color: #912842;
+}
+
+//height and font changes
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: #fff;
+  line-height: 26px;
+  padding: 0 .9375rem;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+.top-bar .telephone {
+  font-size: 14px !important;
+  text-transform: uppercase;
+  font-weight: 500 !important;
+  color: #706c6c;
+  padding: 0 .9375rem;
+  margin-top: 3px;
+  padding-bottom: 9px;
+  margin-left: 25px;
+  letter-spacing: 1px;
+}
+
+.top-bar-section .telephone i {
+  font-size: 15px;
+  color: #912842;
+}
+
+.top-bar .telephone:hover {
+  color: #912842 !important;
+  transition: all .3s ease-in-out !important;
+}
+
+
+//Medium screens styling
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .top-bar .telephone {
+    margin-left: 0px;
+  }
+}
+
+
+//Small screens styling
+@media screen and (max-width: 39.9375em) {
+  .contain-to-grid {
+    width: 100%;
+    background: #fff;
+    height: auto;
+    padding-top: 6px;
+    padding-bottom: 4px;
+  }
+
+  .top-bar-section{
+    margin-top: 0;
+  }
+
+  .top-bar .top-bar-section{
+    padding-left: 0px;
+  }
+
+  .top-bar .toggle-topbar.menu-icon {
+    margin-top: -13px;
+  }
+  .current a{
+    border: none;
+  }
+
+  .logo {
+    margin-left: 15px;
+    padding-top: 1px;
+  }
+
+  .logo img {
+    max-height: 40px;
+    max-width: 200px;
+  }
+
+  //DROPDOWN STYLING
+  .top-bar-section .dropdown li:not(.has-form):not(.active)>a:not(.button) {
+    background: #fff;
+    color: #706c6c;
+  }
+  .top-bar-section .dropdown li:not(.has-form):not(.active)>a:not(.button):hover {
+    color: #912842;
+  }
+
+  .top-bar-section li:not(.has-form) a:not(.button) {
+    line-height: 30px;
+    font-size: 15px;
+  }
+
+  .top-bar-section  .has-dropdown a:not(.button):hover {
+    background: #fff !important;
+    color: #912842 !important;
+  }
+
+  .top-bar .telephone {
+    margin-left: 0px;
+  }
+}

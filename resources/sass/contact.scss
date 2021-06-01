@@ -1,0 +1,117 @@
+/*
+* Contact Page Styling
+*/
+
+.contact-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, .38), rgba(0, 0, 0, .38)),
+  url("/site_images/contact.jpg");
+  background-position: center;
+  height: 365px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-hero-unit-info h2 {
+  margin-top: 150px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 34px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.contact-details {
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+.contact-details .fa-circle {
+  color: #912842;
+  font-size: 50px;
+}
+
+.contact-details .fa-mobile, .contact-details .fa-envelope, .contact-details .fa-map-marker {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
+.contact-details .fa-stack {
+  margin-bottom: 20px;
+}
+
+ .contact-telephone, .contact-email {
+   margin-left: 45px;
+}
+
+.contact-details-title h2{
+  color: black;
+  text-align: center;
+}
+
+.contact-details-title h2 span, .office{
+  color: #912842;
+}
+
+.contact-address .second-office{
+  margin-top: 15px;
+}
+
+.contact-address p, .contact-telephone p, .contact-email p {
+  margin-bottom: 1px;
+}
+
+.contact-form {
+  margin-bottom: 65px;
+}
+
+.contact-form-details input[type=text], .contact-form-details input[type=email], .contact-form-details textarea {
+  background-color: #f8f8f8;
+}
+
+.contact-form-details .button {
+  background-color: #912842;
+  border-radius: 3px;
+}
+
+.contact-form-title h2{
+  color: #484848;
+}
+
+.contact-form-title h2 span{
+  color: #484848;
+}
+
+/*
+* Small screens styling for the   page
+*/
+
+@media screen and (max-width: 39.9375em) {
+  .contact-details {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .contact-form {
+    margin-bottom: 30px;
+  }
+
+  .contact-address , .contact-telephone , .contact-email  {
+    margin-bottom: 20px;
+  }
+
+  .contact-telephone, .contact-email {
+    margin-left: 0px;
+  }
+}
+
+/*
+* Medium screens styling for the   page
+*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .contact-address , .contact-telephone , .contact-email  {
+    margin-bottom: 20px;
+  }
+}
+

@@ -1,0 +1,319 @@
+/*
+* Home Page
+*/
+.hero-unit {
+  background-image: linear-gradient(rgba(0, 0, 0, .48), rgba(0, 0, 0, .48)),
+  url("/site_images/ccm-church.jpg");
+  background-position: center;
+  height: 650px;
+  background-size: auto 960px;
+  background-repeat: no-repeat;
+}
+.prayer-request {
+  height: 400px;
+  background-image: url('/site_images/need-prayer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.msg-btn {
+  border: 2px solid; color: white; width: 200px; padding: 10px; border-radius: 8px;
+  margin-top: 30px;
+}
+.msg-btn:hover{
+  border: none; color: #912842; background-color: white; cursor: pointer;
+}
+.prayer-details {
+  height: 400px;
+  background-color: #912842;
+}
+.new4 {
+  display:inline-block;
+  border: 2px solid #912842;
+  margin-left:10px;
+  width: 100px;
+  margin-right: 20px;
+}
+.hero-unit-info {
+  text-align: center;
+}
+
+.hero-unit-info h2 {
+  margin-top: 160px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hero-unit-info p {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.hero-unit-info .hero-unit-info-links {
+  margin-top: 90px;
+}
+
+.hero-unit-arrow {
+  width: 30px;
+  height: 30px;
+  margin: 40px auto auto auto;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid #fff;
+}
+
+.hero-unit-arrow i {
+  color: #fff;
+  font-size: 26px;
+}
+
+//Overview section
+.home-overview {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.home-overview-details .hollow-button {
+  margin-top: 75px;
+  margin-bottom: 0px;
+}
+
+.home-overview-img img {
+  width: 100%;
+}
+
+//Location section
+.home-location {
+  margin-bottom: 100px;
+}
+
+//Lifestyle section
+.home-lifestyle-details-btn a{
+  margin-top: 108px;
+}
+
+.home-lifestyle-img {
+  border-bottom: 2px solid #939296;
+  border-right: 1px solid #939296;
+}
+
+.home-lifestyle-img img {
+  width: 100%;
+}
+
+.home-lifestyle-img-text {
+  height: 95px;
+  padding-left: 15px;
+  padding-top: 10px;
+  background-color: #f6f6f4;
+}
+
+.home-lifestyle-img-text p {
+  margin-bottom: 0;
+}
+
+.home-lifestyle-details h2 {
+  line-height: 26px;
+  letter-spacing: 2px;
+}
+
+//The Developer section
+.developer {
+  background-color: #EEEEEE;
+  background-image: linear-gradient(-180deg, #EEEEEE 0%, rgba(255, 255, 255, 0.00) 100%);
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+.developer-text {
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+.developer-text h4 {
+  text-align: center;
+  font-size: 25px;
+  line-height: 48px;
+  color: #939296;
+  font-weight: 200;
+}
+
+.developer-text p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 24.5px;
+  color: #939296;
+  margin-bottom: 40px;
+}
+
+.developer-text hr {
+  max-width: 120px;
+  border-top: 2px solid #912842;
+  margin-left: 246px;
+  height: 21px;
+}
+
+.developer-text span {
+  margin-left: 211px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24.5px;
+  color: #912842;
+}
+
+.developer-other-projects-images {
+  background-color: #EEEEEE;
+}
+
+.developer-other-projects-images img {
+  max-width: 293px;
+}
+
+.developer-other-projects-images:hover img {
+  transition: box-shadow .5s ease;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.developer-other-projects-images h6 {
+  margin-left: 110px;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 24.5px;
+  color: #232336;
+}
+
+.developer-other-projects-images:hover h6 {
+  transition: text-decoration 2s ease 2s;
+  text-decoration: underline;
+}
+
+.developer-more {
+  margin-top: 30px;
+}
+
+//Experience Section
+.home-experience {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.home-experience-details h2 {
+  font-size: 36px;
+}
+
+.home-experience-details .hollow-button {
+  margin-top: 102px;
+}
+
+.home-experience-img img {
+  width: 100%;
+}
+
+/*
+* Medium screens styling for the home page
+*/
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .home-lifestyle-img {
+    margin-bottom: 40px;
+  }
+}
+
+/*
+* Small screens styling for the home page
+*/
+
+@media screen and (max-width: 39.9375em) {
+  .hero-unit-info h2 {
+    margin-top: 100px;
+    color: #fff;
+  }
+
+  .hero-unit-info p {
+    margin-top: 15px;
+    color: #fff;
+  }
+
+  .hero-unit-info .hero-unit-info-links {
+    margin-top: 30px;
+  }
+
+  .hero-unit-arrow {
+    margin: 40px auto auto auto;
+  }
+
+  .home-overview {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .home-lifestyle-img {
+    margin-bottom: 40px;
+  }
+
+  .home-lifestyle-img img {
+    height: auto;
+  }
+
+  .home-location {
+    margin-bottom: 50px;
+  }
+
+  .developer {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .developer-text {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .developer-text hr {
+    margin-left: 5px;
+    height: 10px;
+  }
+
+  .developer-text span {
+    margin-left: 5px;
+  }
+
+  .developer-text h3 {
+    margin-left: 1px;
+  }
+
+  .developer-text p {
+    margin-bottom: 20px;
+  }
+
+  .developer-other-projects-images img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .developer-other-projects-images h6 {
+    text-align: center;
+  }
+
+  .home-experience {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .home-experience-details .hollow-button {
+    margin-top: 30px;
+  }
+
+  .home-lifestyle-details-btn a{
+    margin-top: 20px;
+  }
+
+  .home-overview-details .hollow-button {
+    margin-top: 11px;
+    margin-bottom: 30px;
+  }
+
+  .home-lifestyle{
+    padding: 0 15px 0 15px;
+  }
+}

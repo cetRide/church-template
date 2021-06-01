@@ -1,0 +1,110 @@
+/* Footer Style*/
+
+.footer {
+  background-color: #912842;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 25px;
+
+}
+
+.loc {
+  box-shadow: 0 0.4px 10px -1px rgba(0, 0, 0, 0.29), 0 1.1px 21.9px -1px rgba(0, 0, 0, -0.039), 0 2.1px 36.6px -1px rgba(0, 0, 0, -0.076), 0 3.4px 55.9px -1px rgba(0, 0, 0, -0.081), 0 5.3px 82.7px -1px rgba(0, 0, 0, -0.074), 0 7.9px 118.8px -1px rgba(0, 0, 0, -0.062), 0 11.7px 158.4px -1px rgba(0, 0, 0, -0.049), 0 17.4px 194.5px -1px rgba(0, 0, 0, -0.035), 0 26.3px 226px -1px rgba(0, 0, 0, -0.022), 0 40px 254px -1px rgba(0, 0, 0, -0.01);
+  background: white;
+  width: 30%; z-index: 2;
+  height: 190px;
+  position: absolute;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.footer h2 {
+  font-size: 20px;
+  line-height: 48px;
+  color: #fff;
+}
+
+.footer p {
+  color: #c4c4c4;
+}
+
+.footer-alma-img img{
+
+}
+
+.footer-social a{
+  color: #fff;
+}
+
+.footer-social a:hover{
+  color: #008CBA;
+}
+
+.footer-main {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 30px;
+  margin-bottom: 25px;
+}
+
+.footer-contact-icons p {
+  margin: 0;
+  color: #fff;
+}
+
+/*  Icons */
+.footer .fa {
+  color: #9b9b67;
+}
+
+.footer .fa:hover {
+  color: #fff;
+}
+
+.footer-social .fa {
+  color: #fff;
+}
+
+.footer-social .fa:hover {
+  color: #9b9b67;
+}
+
+.footer-social .fa-twitter {
+  margin-right: 10px;
+}
+
+.footer-contact-icons .fa-map-marker {
+  margin-right: 14px;
+}
+
+.footer-contact-icons .fa-envelope {
+  margin-right: 9px;
+}
+
+.footer-contact-icons .fa-phone {
+  margin-right: 10px;
+}
+
+.footer-subscribe .button{
+  background: #9b9b67;
+  border-radius: 3px;
+  padding-top: 8px;
+  height: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: initial;
+}
+@media screen and (max-width: 39.9375em) {
+  .footer {
+    padding-top: 20px;
+  }
+  .loc {
+    width: 99.5%;
+    margin: 5px;
+    height: 170px;
+  }
+
+  .footer-main {
+    padding-bottom: 30px;
+    margin-bottom: 25px;
+  }
+}

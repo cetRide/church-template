@@ -1,0 +1,288 @@
+$green: #2ad17d;
+$background: #EEF2F4;
+$font: #535C69;
+$icons: #535C69;
+$radial: #AEB6BD;
+$blue: #3374B7;
+$yellow: #EFF6D6;
+$green-hover: #2ad17d;
+$twitter: #1da1f2;
+$light-blue: #D6F1FB;
+$black: #0a0a0a;
+$danger: #ff3860;
+$warning: #ff9100;
+$whitish: #f7f7f7;
+$full-yellow: #ffcb00;
+
+
+/*
+* Front Side CSS
+*/
+
+/* Front Side font type*/
+* {
+  font-family: proxima-nova, "Proxima Nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+.row, .top-bar {
+  max-width: 960px;
+}
+
+p {
+  color: #706c6c;
+}
+
+/* Alert Button*/
+div.alert {
+  padding: 20px;
+  z-index: 10;
+
+  .close {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.alert-success {
+  background: $green;
+  color: #fff;
+}
+
+.alert-info {
+  background: $blue;
+  color: #fff;
+}
+
+.alert-danger {
+  background: $danger;
+  color: #fff;
+}
+
+.alert-error {
+  background: $danger;
+  color: #fff;
+}
+
+.alert-warning {
+  background: $black;
+  color: #ffdd57;
+}
+
+.label-eye {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+
+  &.primary {
+    color: $blue;
+  }
+
+  &.gray {
+    color: $radial;
+    background: $radial;
+  }
+
+  &.success {
+    color: $green;
+  }
+
+  &.alert {
+    color: $danger;
+  }
+
+  &.warnings {
+    background: $full-yellow;
+  }
+}
+
+
+.intranet-success {
+  color: #fff;
+  background: $green;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 1px;
+
+  &:hover,  &:active, &:focus {
+    color: #fff;
+    border: 1px solid $green;
+    background: $green;
+  }
+}
+
+.intranet-alert, .intranet-danger {
+  color: #fff;
+  background: $danger;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 1px;
+  &:hover,  &:active, &:focus {
+    color: #fff;
+    border: 1px solid $danger;
+    background: $danger;
+  }
+}
+
+.intranet-warning {
+  color: #fff;
+  background: $warning;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 1px;
+  &:hover,  &:active, &:focus {
+    color: #fff;
+    border: 1px solid $warning;
+    background: $warning;
+  }
+}
+
+span {
+  &.error {
+    color: $danger;
+    font-size: 12px;
+    font-style: italic;
+  }
+
+}
+
+input, select {
+  &.error {
+    border: 1px solid $danger;
+  }
+}
+
+#Ct-Table {
+  .intranet-success, .intranet-alert {
+    margin-top:0;
+    margin-bottom: 0;
+    min-width: 115px;
+  }
+}
+
+/*
+*  Formatting for all front side buttons
+*/
+
+input[type=submit], .button {
+  border-radius: 0;
+  //box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .1);
+  box-shadow: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+h2 {
+  font-size: 23px;
+  line-height: 48px;
+  color: #912842;
+  margin-bottom: 30px;
+}
+
+/*
+*  Formatting for all front side input fields
+*/
+
+input:not([type]), input[type=text], input[type=password], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=email], input[type=number], input[type=search], input[type=tel], input[type=time], input[type=url], input[type=color], textarea {
+  border-style: none;
+  border-radius: 3px;
+  border-width: 0;
+  border-color: #fff;
+  box-shadow: none;
+  color: rgba(0, 0, 0, .75);
+}
+
+/* Custom Buttons */
+.custom-button {
+  background-color: #912842;
+  text-transform: uppercase;
+}
+
+.custom-button:hover {
+  background-color: desaturate(#912842, 20%);
+}
+
+.hollow-button {
+  transition: background-color .9s ease;
+  border: 1px solid #912842;
+  border-radius: 0;
+  padding: 14px 40px 14px 40px;
+  color: #912842;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #fff;
+  text-transform: uppercase;
+}
+
+.hollow-button:hover {
+  transition: background-color .9s ease;
+  border: 1px solid #912842;
+  color: white;
+  background-color: #912842;
+}
+
+.classical-button {
+  background-color: #912842;
+  text-transform: uppercase;
+}
+
+.dark-button {
+  background: rgba(0, 0, 0, .5);
+  text-transform: uppercase;
+  border: 1px solid #fff;
+}
+
+.dark-button:hover {
+  background-color: desaturate(#000, 20%);
+}
+
+
+.reveal-modal .close-reveal-modal {
+  color: #232336;
+  top: -4px;
+  right: 1.375rem;
+}
+
+/*
+* Slider styling
+*/
+.slick-slide {
+  position: relative;
+}
+
+.slick-prev, .slick-next {
+  display: none !important;
+}
+
+//Small Screen
+@media screen and (max-width: 39.9375em) {
+  h2 {
+    margin-bottom: 15px;
+  }
+}
+
+/*
+* Medium screens styling
+*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  h2 {
+    margin-bottom: 15px;
+  }
+  .landing-container #boxholder {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}

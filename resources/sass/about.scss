@@ -1,0 +1,267 @@
+/*
+* About Page Styling
+*/
+.about-hero-unit{
+  background-image: linear-gradient(rgba(0, 0, 0, .48), rgba(0, 0, 0, .48)),
+  url("/site_images/about.jpg");
+  background-position: center;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.the-church {
+  background-color: #f6f4f3;
+  padding: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.the-history {
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, .48), rgba(0, 0, 0, .48)),
+  url("/site_images/me-pray.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ch-info {
+  height: 500px;
+}
+.abt-img {
+  height: 350px;
+  background-image: linear-gradient(rgba(0, 0, 0, .48), rgba(0, 0, 0, .48)),
+  url("/site_images/cross.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.ch-info span {
+  color: #912842;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+.about-page h2 {
+  text-transform: uppercase;
+}
+
+.about-page p {
+  font-size: 14px;
+}
+
+.about-icons {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.about-icons .fa-stack {
+  margin-right: 30px;
+}
+
+.about-icons .fa-stack-1x {
+  font-size: 27px;
+  margin: 7px 5px;
+}
+
+.about-icons .fa {
+  text-align: center;
+}
+
+.about-icons .fa-twitter, .fa-home, .fa-map-marker, .fa-heart {
+  color: #fff;
+}
+
+.about-icons .heart .fa-stack-1x {
+  font-size: 22px;
+}
+
+.about-icons .fa-circle {
+  color: #912842;
+  font-size: 3em;
+}
+
+.about-us {
+  margin-bottom: 65px;
+  margin-top: 65px;
+}
+
+.about-us-image img, .about-location-img img {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.about-location {
+  margin-bottom: 65px;
+}
+
+//DEVELOPER DETAILS
+.about-developer-title {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.about-developers {
+  margin-bottom: 65px;
+}
+
+.about-developers > .row {
+  max-width: 100%;
+}
+
+.about-developers .row .columns {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.about-developers-cre .row, .about-developers-CI .row {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.about-developers-cre .row .columns, .about-developers-CI .row .columns {
+  padding-left: .9375rem;
+  padding-right: .9375rem;
+}
+
+.about-developers-cre {
+  background-color: #f8f8f8;
+  height: 400px;
+  padding: 65px 0 65px;
+}
+
+.about-developers-CI {
+  background-color: #e6e6e6;
+  height: 400px;
+  padding: 65px 0 65px;
+}
+
+.about-developers-cre-details, .about-developers-CI-details {
+  text-align: center;
+}
+
+.about-developers-cre-details img, .about-developers-CI-details img {
+  height: 40px;
+  width: 128px;
+}
+
+.about-other-projects-text h2{
+ position: relative;
+}
+
+.about-other-projects-text h2:after {
+  content:"";
+  background: #949c9c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 30%;
+}
+
+.about-other-projects-title {
+  text-align: center;
+}
+
+.about-other-projects-img img {
+  height: 215px;
+  width: 100%;
+}
+
+.about-other-projects-situ, .about-other-projects-amara {
+  margin-bottom: 65px;
+}
+
+.downloads-details {
+  text-align: center;
+}
+
+.downloads {
+  background-color: #f8f8f8;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/*
+* Small screens styling for the  About page
+*/
+@media screen and (max-width: 39.9375em) {
+  .the-church {
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .about-us {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .about-icons {
+    margin-bottom: 30px;
+  }
+
+  .about-location {
+    margin-bottom: 30px;
+  }
+
+  .about-developer-title {
+    margin-bottom: 30px;
+  }
+
+  .about-developers {
+    margin-bottom: 30px;
+  }
+
+  .about-developers-cre {
+    background-color: #f8f8f8;
+    height: auto;
+    padding: 30px 0 30px;
+  }
+
+  .about-developers-CI {
+    background-color: #e6e6e6;
+    height: auto;
+    padding: 30px 0 30px;
+  }
+
+  .about-other-projects-situ, .about-other-projects-amara {
+    margin-bottom: 30px;
+  }
+
+  .about-other-projects-img img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .about-other-projects-text h2:after {
+    width: 10%;
+  }
+
+  .downloads {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .about-developers-cre .row, .about-developers-CI .row {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+}
+
+/*
+* Medium screens styling for the About page
+*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .about-other-projects-img img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: auto;
+  }
+
+  .about-other-projects-text h2:after {
+    width: 10%;
+  }
+}

@@ -1,0 +1,165 @@
+/*
+* Styling for the News page
+*/
+
+.news-hero-unit {
+  height: 205px;
+  background-color: #912842;
+  margin-top: 100px;
+  margin-bottom: 65px;
+}
+
+.news-hero-unit h2 {
+  margin-top: 80px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.news-hero-unit h2 strong {
+  color: #9b9b67;
+}
+
+.news-search input{
+  border-radius: 0;
+  border-bottom: 1px solid #706c6c;
+}
+
+.news-item {
+  padding-top: 65px;
+  margin-bottom: 80px;
+  border-top: 1px solid #706c6c;
+}
+
+.news-item-img {
+  height: 287px;
+}
+
+.news-item-details{
+  height: 287px;
+}
+
+.news-item-details h2 {
+  margin-bottom:7px;
+  margin-top: -10px;
+  line-height: 29px;
+  font-size: 20px;
+}
+
+.news-item-details h2 a{
+  color: #912842;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.news-search a{
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #706c6c;
+}
+
+.news-search{
+  margin-bottom: 20px;
+}
+
+.news-item-tag {
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+}
+
+.news-item-tag p {
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+.news-item-tag a {
+  color: #912842;
+  font-size: 14px;
+}
+
+.news-items-pagination{
+  margin-bottom: 65px;
+  margin-top: -40px;
+}
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.pagination li a{
+  border: 1px solid lightgray;
+}
+
+.pagination>li {
+  display: inline;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+  background-color: #C9091A;
+  border-color: #C9091A;
+}
+
+/*
+* Medium screens styling for the News page
+*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .news-hero-unit, .news-item  {
+    margin-bottom: 30px;
+  }
+
+  .news-item-tag {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: auto;
+  }
+
+  .news-item {
+    margin-bottom: 30px;
+    padding-top: 25px;
+  }
+
+  .news-item-details{
+    height: auto;
+  }
+}
+
+/*
+* Small screens styling for the News page
+*/
+@media screen and (max-width: 39.9375em) {
+  .news-hero-unit, .news-item  {
+    margin-bottom: 30px;
+  }
+
+  .news-item-tag {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: auto;
+  }
+
+  .news-item {
+    margin-bottom: 30px;
+    padding-top: 25px;
+  }
+
+  .news-item-details{
+    height: auto;
+  }
+
+  .news-items-pagination{
+    margin-bottom: 40px;
+    margin-top: -20px;
+  }
+
+}
